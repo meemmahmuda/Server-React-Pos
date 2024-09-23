@@ -55,7 +55,7 @@ class SalesReturnController extends Controller
         $sale->quantity -= $quantityReturned;
         $sale->save();
 
-        return response()->json(['success' => 'Sales return processed successfully!', 'salesReturn' => $salesReturn], 201)
+        return response()->json(['success' => 'Sales return processed successfully!', 'salesReturn' => $salesReturn], 201);
     }
 
     public function destroy(SalesReturn $salesReturn)
